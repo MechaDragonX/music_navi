@@ -2,7 +2,9 @@ from spotapi import Public
 
 url_prefix = 'https://open.spotify.com/track/'
 
-results = Public.song_search('sunny yorushika')
+query = input('Type query: ')
+results = Public.song_search(query)
+# results = Public.song_search('sunny yorushika')
 track_info = ''
 for item in results:
     # For some reason I need to do index with a number to get the first sub result even though it errors... this API is stupid
