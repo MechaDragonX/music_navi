@@ -1,2 +1,6 @@
+pymongo
+redis
+websockets
+
 spotapi
 iGetMusic
